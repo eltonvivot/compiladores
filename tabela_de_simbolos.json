@@ -1,0 +1,167 @@
+[
+    {
+        "lexema": "inicio",
+        "classe": "inicio",
+        "tipo": "inicio"
+    },
+    {
+        "lexema": "varinicio",
+        "classe": "varinicio",
+        "tipo": "varinicio"
+    },
+    {
+        "lexema": "varfim",
+        "classe": "varfim",
+        "tipo": "varfim"
+    },
+    {
+        "lexema": "escreva",
+        "classe": "escreva",
+        "tipo": "escreva"
+    },
+    {
+        "lexema": "leia",
+        "classe": "leia",
+        "tipo": "leia"
+    },
+    {
+        "lexema": "se",
+        "classe": "se",
+        "tipo": "se"
+    },
+    {
+        "lexema": "entao",
+        "classe": "entao",
+        "tipo": "entao"
+    },
+    {
+        "lexema": "fimse",
+        "classe": "fimse",
+        "tipo": "fimse"
+    },
+    {
+        "lexema": "Repita",
+        "classe": "Repita",
+        "tipo": "Repita"
+    },
+    {
+        "lexema": "fimRepita",
+        "classe": "fimRepita",
+        "tipo": "fimRepita"
+    },
+    {
+        "lexema": "fim",
+        "classe": "fim",
+        "tipo": "fim"
+    },
+    {
+        "lexema": "inteiro",
+        "classe": "inteiro",
+        "tipo": "inteiro"
+    },
+    {
+        "lexema": "literal",
+        "classe": "literal",
+        "tipo": "literal"
+    },
+    {
+        "lexema": "real",
+        "classe": "real",
+        "tipo": "real"
+    },
+    {
+        "classe": "ID",
+        "tipo": "NULO",
+        "lexema": "\nvarinicio"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": ",",
+        "classe": "VIR"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": ";",
+        "classe": "PT_V"
+    },
+    {
+        "classe": "LIT",
+        "tipo": "literal",
+        "lexema": " \"Digite B:\""
+    },
+    {
+        "tipo": "NULO",
+        "lexema": "(",
+        "classe": "AB_P"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": ">",
+        "classe": "OPR_maior"
+    },
+    {
+        "classe": "NUM",
+        "tipo": "inteiro",
+        "lexema": "2"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": ")",
+        "classe": "FC_P"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": "<=",
+        "classe": "OPR_final"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": "<-",
+        "classe": "RCB"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": "+",
+        "classe": "OPM"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": "<",
+        "classe": "OPR_menor"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": " \"\\nB",
+        "classe": "possivel_literal"
+    },
+    {
+        "classe": "ERRO",
+        "tipo": "NULO",
+        "lexema": "NULO"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": ";",
+        "classe": "PT"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": "(",
+        "classe": "AB"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": ">",
+        "classe": "OPR"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": ")",
+        "classe": "FC"
+    },
+    {
+        "tipo": "NULO",
+        "lexema": "\"\\nB",
+        "classe": "possivel"
+    }
+]
