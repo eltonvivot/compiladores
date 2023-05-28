@@ -1,5 +1,3 @@
-escreva "\nB=\n";
-escreva "\nB=\n";
 inicio
 varinicio
 literal A,B;
