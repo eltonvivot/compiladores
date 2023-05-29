@@ -18,8 +18,6 @@ def inserir(token: dict):
         tokens = ler_escrever_json()
         tokens.append(token)
         ler_escrever_json(tokens)
-    # else:
-    #     raise Exception('Token ja existe na tabela de simbolos.')
 
 def atualizar(token: dict):
     tokens = ler_escrever_json()

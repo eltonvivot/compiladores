@@ -11,23 +11,23 @@ simbolos = ['+','-','*','/',
              ]
 estados = {
     'inicio': {
-        'digito': 'INTEIRO',        # feito
-        '"': 'possivel_literal',    # feito
-        'letra': 'ID',              # feito
-        '{': 'possivel_comentario', # feito
-        '$': 'EOF',                 # feito. Fim do arquivo precisa do $?
-        '<': 'OPR_menor',           # feito
-        '>': 'OPR_maior',           # feito
-        '=': 'OPR_atribuicao',      # feito
-        '+': 'OPM',                 # feito
-        '-': 'OPM',                 # feito
-        '*': 'OPM',                 # feito
-        '/': 'OPM',                 # feito
-        '(': 'AB_P',                # feito
-        ')': 'FC_P',                # feito
-        ',': 'VIR',                 # feito
-        ';': 'PT_V',                # feito
-        'ignora': 'inicio'          # feito
+        'digito': 'INTEIRO',        
+        '"': 'possivel_literal',    
+        'letra': 'ID',              
+        '{': 'possivel_comentario', 
+        'EOF': 'EOF',
+        '<': 'OPR_menor',           
+        '>': 'OPR_maior',           
+        '=': 'OPR_atribuicao',      
+        '+': 'OPM',                 
+        '-': 'OPM',                 
+        '*': 'OPM',                 
+        '/': 'OPM',                 
+        '(': 'AB_P',                
+        ')': 'FC_P',                
+        ',': 'VIR',                 
+        ';': 'PT_V',                
+        'ignora': 'inicio'          
     },
     'INTEIRO': {
         'digito': 'INTEIRO',
@@ -141,7 +141,9 @@ template_tokens = {
 def eh_final(estado: str) -> bool:
     return any(char.isupper() for char  in estado)
 
-def pega_tipo(char: str):
+def pega_tipo(estado_atual: str, char: str):
+    if (estado_atual == 'INTEIRO' or estado_atual == 'REAL') and (char == 'e' or char == 'E'):
+        return 'Ee'
     if len(char) > 1: 
         raise Exception(f'Caracter possui tamanho {len(char)}.')
     if (char.isalpha()):
@@ -155,7 +157,6 @@ def pega_tipo(char: str):
     return "outro"
 
 def pega_estado(estado_atual, nova_entrada): 
-    # print(f"DEBUG - Atual: {estado_atual} | Entrada: {nova_entrada}")
     if not (estado_atual in estados) and eh_final(estado_atual):
         return None
     if nova_entrada in estados[estado_atual]:

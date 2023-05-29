@@ -1,72 +1,102 @@
 [
     {
-       "lexema":"inicio",
-       "classe":"inicio",
-       "tipo":"inicio"
+        "lexema": "inicio",
+        "classe": "inicio",
+        "tipo": "inicio"
     },
     {
-       "lexema":"varinicio",
-       "classe":"varinicio",
-       "tipo":"varinicio"
+        "lexema": "varinicio",
+        "classe": "varinicio",
+        "tipo": "varinicio"
     },
     {
-       "lexema":"varfim",
-       "classe":"varfim",
-       "tipo":"varfim"
+        "lexema": "varfim",
+        "classe": "varfim",
+        "tipo": "varfim"
     },
     {
-       "lexema":"escreva",
-       "classe":"escreva",
-       "tipo":"escreva"
+        "lexema": "escreva",
+        "classe": "escreva",
+        "tipo": "escreva"
     },
     {
-       "lexema":"leia",
-       "classe":"leia",
-       "tipo":"leia"
+        "lexema": "leia",
+        "classe": "leia",
+        "tipo": "leia"
     },
     {
-       "lexema":"se",
-       "classe":"se",
-       "tipo":"se"
+        "lexema": "se",
+        "classe": "se",
+        "tipo": "se"
     },
     {
-       "lexema":"entao",
-       "classe":"entao",
-       "tipo":"entao"
+        "lexema": "entao",
+        "classe": "entao",
+        "tipo": "entao"
     },
     {
-       "lexema":"fimse",
-       "classe":"fimse",
-       "tipo":"fimse"
+        "lexema": "fimse",
+        "classe": "fimse",
+        "tipo": "fimse"
     },
     {
-       "lexema":"Repita",
-       "classe":"Repita",
-       "tipo":"Repita"
+        "lexema": "Repita",
+        "classe": "Repita",
+        "tipo": "Repita"
     },
     {
-       "lexema":"fimRepita",
-       "classe":"fimRepita",
-       "tipo":"fimRepita"
+        "lexema": "fimRepita",
+        "classe": "fimRepita",
+        "tipo": "fimRepita"
     },
     {
-       "lexema":"fim",
-       "classe":"fim",
-       "tipo":"fim"
+        "lexema": "fim",
+        "classe": "fim",
+        "tipo": "fim"
     },
     {
-       "lexema":"inteiro",
-       "classe":"inteiro",
-       "tipo":"inteiro"
+        "lexema": "inteiro",
+        "classe": "inteiro",
+        "tipo": "inteiro"
     },
     {
-       "lexema":"literal",
-       "classe":"literal",
-       "tipo":"literal"
+        "lexema": "literal",
+        "classe": "literal",
+        "tipo": "literal"
     },
     {
-       "lexema":"real",
-       "classe":"real",
-       "tipo":"real"
+        "lexema": "real",
+        "classe": "real",
+        "tipo": "real"
+    },
+    {
+        "classe": "NUM",
+        "tipo": "real",
+        "lexema": "4.0"
+    },
+    {
+        "classe": "ID",
+        "tipo": "NULO",
+        "lexema": "e"
+    },
+    {
+        "classe": "possivel_exponencial",
+        "tipo": "NULO",
+        "lexema": "4.0e"
+    },
+    {
+        "classe": "ERRO",
+        "tipo": "NULO",
+        "lexema": "NULO"
+    },
+    {
+        "classe": "EOF",
+        "tipo": "NULO",
+        "lexema": "EOF"
+    },
+    {
+        "classe": "LIT",
+        "tipo": "literal",
+        "lexema": "\"$\""
     }
 ]
