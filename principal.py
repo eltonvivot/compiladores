@@ -35,6 +35,8 @@ def main(file_path='programa.p'):
             if scanner_lib.eh_final(estado):
                 token = scanner_lib.scanner(estado, lexema, linha, coluna)
                 print_token(token)
+            elif estado == 'inicio':
+                pass
             else:
                 token = scanner_lib.scanner('ERRO', 'EOF', linha, coluna)
                 print_token(token)
