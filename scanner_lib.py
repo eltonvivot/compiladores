@@ -175,6 +175,7 @@ def formata_estado(estado: str) -> str:
         return estado
 
 def scanner(estado: str, lexema: str, linha: int, coluna: int) -> dict:
+    estado = formata_estado(estado)
     if not estado in template_tokens:
         token = {
             'classe': estado,
