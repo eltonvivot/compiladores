@@ -189,6 +189,7 @@ def scanner(estado: str, lexema: str, linha: int, coluna: int) -> dict:
         if estado == 'ID':
             resultado_busca = tab_simbolos_lib.buscar(lexema)
             if resultado_busca:
+                print("achou")
                 return resultado_busca
             else:
                 tab_simbolos_lib.inserir(token)

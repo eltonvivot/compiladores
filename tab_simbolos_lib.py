@@ -9,19 +9,21 @@ def ler_escrever_json(data: dict = None) -> dict:
             json.dump(data, f, indent=4)
     return data
 
-def buscar(classe_token: str):
+def buscar(lexema: str):
     tokens = ler_escrever_json()
-    return next((item for item in tokens if item["classe"] == classe_token), None)
+    return next((item for item in tokens if item["lexema"] == lexema), None)
 
 def inserir(token: dict):
     if not buscar(token['lexema']):
         tokens = ler_escrever_json()
         tokens.append(token)
         ler_escrever_json(tokens)
+    else:
+        atualizar(token)
 
 def atualizar(token: dict):
     tokens = ler_escrever_json()
-    token_antigo = buscar(token['classe'])
+    token_antigo = buscar(token['lexema'])
     if token_antigo:
         tokens.remove(token_antigo)
         tokens.append(token)
