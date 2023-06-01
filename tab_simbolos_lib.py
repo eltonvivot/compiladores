@@ -14,7 +14,7 @@ def buscar(classe_token: str):
     return next((item for item in tokens if item["classe"] == classe_token), None)
 
 def inserir(token: dict):
-    if not buscar(token['classe']):
+    if not buscar(token['lexema']):
         tokens = ler_escrever_json()
         tokens.append(token)
         ler_escrever_json(tokens)

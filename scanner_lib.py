@@ -182,17 +182,18 @@ def scanner(estado: str, lexema: str, linha: int, coluna: int) -> dict:
             'tipo': 'NULO',
             'lexema': lexema
         }
-        tab_simbolos_lib.inserir(token)
         return token
     else:
+        token = template_tokens[estado]
+        token['lexema'] = lexema
         if estado == 'ID':
             resultado_busca = tab_simbolos_lib.buscar(lexema)
             if resultado_busca:
                 return resultado_busca
+            else:
+                tab_simbolos_lib.inserir(token)
         elif estado == 'ERRO':
-            lexema = 'NULO'
+            token['lexema'] = 'NULO'
             print((f"Caractere inválido na linguagem, linha {linha}, coluna {coluna}"))
-        token = template_tokens[estado]
-        token['lexema'] = lexema
-        tab_simbolos_lib.inserir(token)
         return token
+        
